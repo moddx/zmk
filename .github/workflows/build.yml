@@ -23,6 +23,7 @@ jobs:
           - nrfmicro_13
           - proton_c
         shield:
+          - atreus50
           - boardsource3x4
           - corne_left
           - corne_right
