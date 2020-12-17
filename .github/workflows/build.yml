@@ -18,21 +18,11 @@ jobs:
     strategy:
       matrix:
         board:
-          - bluemicro840_v1
           - nice_nano
-          - nrfmicro_13
-          - proton_c
         shield:
           - atreus50
           - settings_reset
           - tg4x
-        include:
-          - board: dz60rgb_rev1
-          - board: nrf52840_m2
-            shield: m60
-          - board: planck_rev6
-          - board: proton_c
-            shield: clueboard_california
     steps:
       - name: Checkout
         uses: actions/checkout@v2
