@@ -37,6 +37,7 @@
     &kp LCTRL &kp LALT    &kp LGUI    &lt 1 BSPC  &lt 2 SPACE &kp LEFT  &kp A	  &kp B 	&kp DOWN  &kp UP      &kp RIGHT    &kp 1        &kp 2         &kp 3
             >;
         };
+
         /*
         lower {
             bindings = <
