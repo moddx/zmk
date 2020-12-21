@@ -18,11 +18,50 @@ jobs:
     strategy:
       matrix:
         board:
+          - bluemicro840_v1
           - nice_nano
+          - nrfmicro_13
+          - proton_c
         shield:
           - atreus50
+          - boardsource3x4
+          - corne_left
+          - corne_right
+          - cradio_left
+          - cradio_right
+          - crbn
+          - iris_left
+          - iris_right
+          - jian_left
+          - jian_right
+          - jorne_left
+          - jorne_right
+          - kyria_left
+          - kyria_right
+          - lily58_left
+          - lily58_right
+          - microdox_left
+          - microdox_right
+          - nibble
+          - qaz
+          - quefrency_left
+          - quefrency_right
+          - reviung41
+          - romac
+          - romac_plus
           - settings_reset
+          - sofle_left
+          - sofle_right
+          - splitreus62_left
+          - splitreus62_right
           - tg4x
+        include:
+          - board: dz60rgb_rev1
+          - board: nrf52840_m2
+            shield: m60
+          - board: planck_rev6
+          - board: proton_c
+            shield: clueboard_california
     steps:
       - name: Checkout
         uses: actions/checkout@v2
