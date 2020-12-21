@@ -9,8 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
-#define LOWER 1
-#define RAISE 2
 
 / {
     behaviors {
@@ -31,31 +29,11 @@
 
         default_layer {
             bindings = <
-    &kp TAB   &kp Q       &kp W       &kp E       &kp R       &kp T   	&trans  &trans  &kp Y     &kp U       &kp I        &kp O        &kp P   		  &kp BSPC
-    &kp LALT  &hm LGUI A  &hm LALT S  &hm LCTRL D &hm LSHFT F &kp G     &trans  &trans 	&kp H     &hm RSHFT J &hm RCTRL K  &hm RALT L   &hm RGUI SEMI &kp RET
-    &kp LSHFT &kp Z       &kp X       &kp C       &kp V       &kp B     &trans  &trans 	&kp N     &kp M       &kp COMMA    &kp DOT      &kp FSLH     	&kp SQT
-    &kp LCTRL &kp LALT    &kp LGUI    &lt 1 BSPC  &lt 2 SPACE &kp LEFT  &kp A	  &kp B 	&kp DOWN  &kp UP      &kp RIGHT    &kp 1        &kp 2         &kp 3
+    &kp TAB   &kp Q     &kp W     &kp E     &kp R     &kp T     &none   &none     &kp Y     &kp U     &kp I     &kp O     &kp P   &kp BSPC
+    &kp LALT  &kp U     &kp I     &kp A     &kp E     &kp O     &none   &none     &kp S     &kp N     &kp R     &kp T     &kp D   &kp Y
+    &kp LSHFT &kp U     &kp O     &kp A     &kp P     &kp Z     &none   &none     &kp B     &kp M     &kp COMMA &kp DOT   &kp J   &kp NUM_4
+    &mo L5    &kp NUM_0 &kp NUM_0 &kp LGUI  &kp LCTRL &kp NUM_1 &mo L1  &kp SPACE &mo L2    &kp NUM_0 &kp NUM_0 &kp NUM_1 &kp Q   &kp RSHFT
             >;
         };
-
-        /*
-        lower {
-            bindings = <
-    &kp GRAVE    &kp F1  &kp F2       &kp F3  &kp F4  &kp F5  &trans  &trans 	&kp F6        &kp F7        &kp F8        &kp F9       &kp F10     &kp F11     &kp F12  &kp PSCRN
-    &kp DEL      &trans  &kp K_VOL_UP &trans  &trans  &trans  &trans  &trans	&trans        &kp LEFT      &kp DOWN      &kp UP       &kp RIGHT   &trans
-    &trans       &trans  &kp K_VOL_DN &trans  &trans  &trans  &trans  &trans	&trans        &trans        &trans        &bt BT_PRV   &bt BT_NXT  &bt BT_CLR
-    &bootloader  &reset  &trans       &trans  &trans  &trans  &trans  &trans	&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3
-            >;
-        };
-
-    raise {
-            bindings = <
-    &kp GRAVE &kp N1     &kp N2     &kp N3     &kp N4     &kp N5     &kp N6      &kp N7       &kp N8       &kp N9     &kp N0     &kp PSCRN
-    &kp DEL   &kp F1     &kp F2     &kp F3     &kp F4     &kp F5     &kp F6      &kp MINUS    &kp EQUAL    &kp LBKT   &kp RBKT   &kp BSLH
-    &trans    &kp F7     &kp F8     &kp F9     &kp F10    &kp F11    &kp F12     &kp TILDE    &kp HOME     &kp PG_UP  &kp PG_DN  &kp END
-    &trans    &trans     &trans     &trans     &trans     &trans     &kp C_NEXT  &kp C_VOL_DN &kp C_VOL_UP &kp C_PP
-            >;
-        };
-        */
     };
 };
