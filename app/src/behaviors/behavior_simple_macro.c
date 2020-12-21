@@ -51,7 +51,10 @@ struct behavior_simple_macro_data {};
 
 static int behavior_simple_macro_init(struct device *dev) { return 0; }
 
-static int on_keymap_binding_pressed(struct device *dev, u32_t position, u32_t _, u32_t __) {
+// static int on_keymap_binding_pressed(struct zmk_behavior_binding *binding,
+//                                      struct zmk_behavior_binding_event event) {
+
+static int on_keymap_binding_pressed(struct device *dev, uint32_t position, uint32_t _, uint32_t __) {
     const struct behavior_simple_macro_config *cfg = dev->config_info;
 
     if (cfg->mode == ZMK_BHV_SIMPLE_MACRO_MODE_KEY_DOWN) {
